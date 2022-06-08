@@ -1,0 +1,112 @@
+/*
+=====================================
+                footer
+=====================================
+*/
+.footer {
+    background-color: var(--hero-background-cl);
+    padding: 60px 0px;
+}
+
+.footer__conteiner {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address {
+    margin-right: 70px;
+}
+
+.footer-adress__item {
+    margin-bottom: 8px;
+    width: 231px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.footer-adress__link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--background-cl-body);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--bt-nav-cl);
+    }
+}
+
+.footer-adress__link-contact {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--footer-adress__link-cl);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--bt-nav-cl);
+    }
+}
+
+/*
+============================
+        Расылка
+ ===========================
+ */
+.footer__modal {
+    display: flex;
+    margin-left: 93px;
+}
+
+.footer-backdrop__label {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+
+.footer-backdrop__label-text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--background-cl-body)
+}
+
+.footer-backdrop__input {
+    cursor: pointer;
+    outline: none;
+
+    margin-top: 20px;
+    padding: 15px 16px 15px 16px;
+    width: 358px;
+    color: var(--background-cl-body);
+    background-color: var(--hero-background-cl);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--bt-cl);
+    }
+}
+
+.footer-backdrop__label:focus-within+.footer-backdrop__input {
+    border-color: var(--bt-cl);
+}
+
+.footer__modal-btn {
+    position: relative;
+
+}
+
+.footer__modal-icon {
+    position: absolute;
+    bottom: 12px;
+    right: 28px;
+    fill: var(--background-cl-body);
+}

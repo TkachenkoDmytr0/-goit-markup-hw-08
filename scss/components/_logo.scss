@@ -1,0 +1,33 @@
+// Header logo
+.header__logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-secondary-cl);
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header__logo-cl {
+    color: var(--footer__logo-cl)
+}
+
+// footer logo
+
+.footer__logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--background-cl-body);
+
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__logo-cl {
+    color: var(--footer__logo-cl);
+}
