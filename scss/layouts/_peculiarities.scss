@@ -46,7 +46,6 @@
 
         @include mq (tablet-only) {
                 width: 354px;
-                margin-right: 15px;
         }
 
         @include mq (desktop) {

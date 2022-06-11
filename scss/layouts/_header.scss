@@ -4,45 +4,58 @@
 ============================
  */
 .header {
-        border-bottom: 1px solid var(--header-line);
+    border-bottom: 1px solid var(--header-line);
 }
+.header__conteiner{
 
+    @include mq(mobile-only){
+    position: relative;
+    height: 60px;
+}}
 .header__nav {
-    @include mq (mobile-only){
-    display: none;
     display: flex;
     align-items: center;
-}}
+}
 
-.header__list {@include mq (mobile-only){
-    opacity: 0;
+
+.header__list {
+    @include mq(mobile-only){
+        display: none;
+    }
+    @include mq(tablet){
     display: flex;
     margin-left: 93px;
 }}
 
-.header__list-contact {@include mq (mobile-only){
-    opacity: 0 ;
+.header__list-contact {
+    @include mq(mobile-only){
+        display: none;
+    }
+    @include mq(tablet){
     display: flex;
     margin-left: auto;
-}}
-
+}
+}
 .header__item {
+    @include mq(tablet){
     margin-right: 50px;
 
     &:last-child {
         margin-right: 0;
     }
-}
+}}
 
 .header__item-contact {
+    @include mq(tablet){
     margin-right: 30px;
 
     &:last-child {
         margin-right: 0;
     }
-}
+}}
 
 .header__link {
+    @include mq(tablet){
     position: relative;
     font-weight: 500;
     line-height: 1.14;
@@ -56,9 +69,10 @@
     &:focus {
         color: var(--bt-nav-cl);
     }
-}
+}}
 
 .header__link.accent::after {
+    @include mq(tablet){
     position: absolute;
     content: '';
     display: block;
@@ -67,13 +81,14 @@
     bottom: 0%;
     background-color: var(--bt-nav-cl);
     border-radius: 2px;
-}
+}}
 
 .accent {
     color: var(--bt-nav-cl);
 }
 
 .header__link-contact {
+    @include mq(tablet){
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -91,13 +106,14 @@
     &:focus {
         color: var(--bt-nav-cl);
     }
-}
+}}
 
 .header__icons {
+    @include mq(tablet){
     margin-right: 10px;
 
     &:hover,
     &:focus {
         color: var(--bt-nav-cl);
     }
-}
+}}

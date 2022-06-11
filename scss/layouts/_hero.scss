@@ -4,32 +4,48 @@
 ============================
  */
 .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/img.jpg);
-    background-repeat: no-repeat;
-    background-color: var(--hero-background-cl);
-    background-size: cover;
-    max-width: 1600px;
-    height: 600px;
-    padding: 200px 0px;
-    margin-left: auto;
-    margin-right: auto;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/img.jpg);
+        background-repeat: no-repeat;
+        background-color: var(--hero-background-cl);
+        background-size: cover;
+
+        @include mq(mobile-only) {
+                height: 400px;
+                padding: 118px 0px;
+        }
+
+        max-width: 1600px;
+        height: 600px;
+        padding: 200px 0px;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .hero__title {
-    position: relative;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-white-cl);
+        position: relative;
+        max-width: 480px;
+        margin-bottom: 30px;
 
-    width: 696px;
-    margin-bottom: 30px;
-    transition: cubic-bezier(.02, -0.3, 1, -0.01);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--text-white-cl);
 
-    animation-name: example;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+        @include mq(desktop) {
+                font-size: 44px;
+                line-height: 1.36;
+                text-align: center;
+                
+
+                width: 696px;
+                margin-bottom: 30px;
+                transition: cubic-bezier(.02, -0.3, 1, -0.01);
+
+                animation-name: example;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+        }
 }
