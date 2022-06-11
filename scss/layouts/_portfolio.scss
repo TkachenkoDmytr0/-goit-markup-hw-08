@@ -5,15 +5,41 @@
  */
 .portfolio__servise-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+
+    @include mq(mobile) {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    @include mq(desktop) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+
+
 }
 
 .portfolio__servise-item {
-    margin-left: 8px;
 
-    &:first-child {
-        margin-left: 0px;
+
+    @include mq(mobile-only) {
+
+
+        &:nth-child(n+4) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+    }
+
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-right: 0px;
     }
 }
 
@@ -25,18 +51,36 @@
 .portfolio-projects__list {
     display: flex;
     flex-wrap: wrap;
+
+    @include mq(tablet) {
+        margin: -30px;
+    }
 }
 
 .portfolio-projects__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-
-    &:nth-child(3n+3) {
-        margin-right: 0px;
+    @include mq(mobile-only) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
 
-    &:nth-last-child(-n+3) {
-        margin-bottom: 0;
+    @include mq(tablet-only) {
+        width: 354px;
+        width: calc((100% - 4 * 15) / 2);
+        margin: 15px;
+    }
+
+    @include mq(desktop) {
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+        &:nth-child(3n+3) {
+            margin-right: 0px;
+        }
+
+        &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -87,7 +131,6 @@
 
     border: 1px solid var(--border-line);
     border-top: none;
-
 }
 
 .projects__title {
@@ -106,4 +149,5 @@
     font-size: 16px;
     line-height: 1.87;
     color: var(--paragraf-color);
+
 }
