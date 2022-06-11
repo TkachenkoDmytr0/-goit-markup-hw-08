@@ -10,20 +10,39 @@
     line-height: 1.16;
     text-align: center;
     color: var(--text-black-cl);
+    margin-bottom: 30px;
 
-    margin-bottom: 50px;
+    @include mq (desktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .client__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    @include mq (mobile){
+        margin: -15px;
+    }
+    
+
+    @include mq (desktop) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .client__item {
-    margin-right: 30px;
+    @include mq (mobile-only){
+        margin: 15px;
+    }
 
-    &:last-child {
-        margin-right: 0;
+    @include mq (desktop) {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 

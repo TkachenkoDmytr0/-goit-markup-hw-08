@@ -18,6 +18,9 @@
 // footer logo
 
 .footer__logo {
+    @include mq (mobile-only){
+        text-align: center;
+    }
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;

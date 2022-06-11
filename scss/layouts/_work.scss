@@ -3,7 +3,16 @@
         публикация работ
 ============================
  */
-
+ @include mq (mobile-only){
+    .work__conteiner{
+        display: none;
+    }
+ }
+ @include mq (tablet-only){
+    .work__conteiner{
+        display: none;
+    }
+ }
 .work {
     padding-top: 0;
 }
@@ -51,8 +60,3 @@
     height: 70px;
     width: 100%;
 } 
-@include mq (mobile-only){
-    .work__conteiner{
-        display: none;
-    }
- }

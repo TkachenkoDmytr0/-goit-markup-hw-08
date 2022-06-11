@@ -4,53 +4,52 @@
 ============================
  */
 .peculiarities__name {
-        text-align: center;
+        @include mq(mobile-only) {
+                text-align: center;
+        }
+
+        flex-direction: row;
+        font-size: 14px;
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
         color: var(--text-black-cl);
 
         margin-bottom: 10px;
-        @media  screen and (min-width: 768px){
-                flex-direction: row;
-        }
 }
 
 .peculiarities__list {
-        @media screen and (min-width: 1200px) {
+        @include mq(mobile-only) {
+                display: block;
+
+        }
+
+        @include mq(tablet-only) {
+                display: flex;
+                flex-wrap: wrap;
+        }
+
+        @include mq(desktop) {
                 display: flex;
         }
 }
 
 .peculiarities__item {
-        @media screen and (min-width: 480px) {
-                margin-top: 30px;
+        @include mq (mobile-only) {
+                margin-bottom: 30px;
                 width: 450px;
 
                 &:first-child {
-                        margin-top: 0px;
+                        margin-bottom: 0px;
                 }
         }
 
-        @media screen and (min-width: 768px) {
-                margin-top: 30px;
+        @include mq (tablet-only) {
                 width: 354px;
-
-                &:first-child {
-                        margin-top: 0px;
-                }
+                margin-right: 15px;
         }
 
-        @media not (max-width: 1170px) {
-                margin-top: 30px;
-
-                &:first-child {
-                        margin-top: 0px;
-                }
-        }
-
-        @media screen and (min-width: 1200px) {
-                margin-top: 0px;
+        @include mq (desktop) {
                 margin-left: 30px;
                 width: 270px;
 
@@ -61,30 +60,28 @@
 }
 
 .peculiarities__icons {
+        display: flex;
         background-color: var(--team-background-cl);
         justify-content: center;
         align-content: center;
-
         border-radius: 4px;
         width: 100%;
         height: 120px;
-        margin-bottom: 30px;
 
-        @media screen and (min-width: 480px) {
+        @include mq(mobile-only) {
                 padding: 25px 190px;
+                margin-bottom: 30px;
         }
 
-        @media screen and (min-width: 762px) {
-                padding: 25px 144px;
-
+        @include mq(tablet-only) {
+                padding: 25px 142px;
+                margin-bottom: 30px;
         }
 
-        @media screen and (min-width: 1200px) {
-                display: flex;
+        @include mq(desktop) {
                 padding: 25px 102px;
-
+                margin-bottom: 30px;
         }
-
 }
 
 .peculiarities__text {

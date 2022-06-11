@@ -9,18 +9,27 @@
 }
 
 .footer__conteiner {
-    display: flex;
-    align-items: baseline;
+    @include mq (desktop){
+        display: flex;
+        align-items: baseline;
+    }
+    
 }
 
 .footer__address {
+    @include mq(mobile-only){
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
     margin-right: 70px;
 }
 
 .footer-adress__item {
     margin-bottom: 8px;
-    width: 231px;
-
+    @include mq(desktop){
+        width: 231px;
+    }
     &:last-child {
         margin-bottom: 0px;
     }
@@ -58,17 +67,29 @@
  ===========================
  */
 .footer__modal {
-    display: flex;
-    margin-left: 93px;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(desktop){
+        display: flex;
+        margin-left: 93px;
+    }
+    
 }
 
 .footer-backdrop__label {
-    display: flex;
-    flex-direction: column;
-    margin-right: 12px;
+    @include mq(desktop){
+        display: flex;
+        flex-direction: column;
+        margin-right: 12px;
+    }
+  
 }
 
 .footer-backdrop__label-text {
+    @include mq(mobile-only){
+        display: flex;
+        justify-content: center;
+    }
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -81,7 +102,7 @@
 
     margin-top: 20px;
     padding: 15px 16px 15px 16px;
-    width: 358px;
+    width: 450px;
     color: var(--background-cl-body);
     background-color: var(--hero-background-cl);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -107,6 +128,10 @@
 .footer__modal-icon {
     position: absolute;
     bottom: 12px;
-    right: 28px;
+    right: 140px;
+    @include mq(desktop){
+        right: 28px;
+    }
+    
     fill: var(--background-cl-body);
 }

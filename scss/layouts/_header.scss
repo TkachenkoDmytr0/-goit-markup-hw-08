@@ -4,23 +4,27 @@
 ============================
  */
 .header {
-    border-bottom: 1px solid var(--header-line);
+        border-bottom: 1px solid var(--header-line);
 }
 
 .header__nav {
+    @include mq (mobile-only){
+    display: none;
     display: flex;
     align-items: center;
-}
+}}
 
-.header__list {
+.header__list {@include mq (mobile-only){
+    opacity: 0;
     display: flex;
     margin-left: 93px;
-}
+}}
 
-.header__list-contact {
+.header__list-contact {@include mq (mobile-only){
+    opacity: 0 ;
     display: flex;
     margin-left: auto;
-}
+}}
 
 .header__item {
     margin-right: 50px;
