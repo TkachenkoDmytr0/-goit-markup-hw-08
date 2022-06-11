@@ -24,20 +24,29 @@
 
 .footer__address {
     @include mq(mobile-only){
-        text-align: center;
         margin-bottom: 60px;
+        
+    }
+    @include mq(desktop){
+        margin-right: 70px;
     }
     
-    margin-right: 70px;
+    
 }
 
 .footer-adress__item {
+    @include mq(mobile-only){
+        margin-right: 0;
+        text-align: center;
+    }
     margin-bottom: 8px;
+    &:last-child {
+        margin-bottom: 0px;
+   
     @include mq(desktop){
         width: 231px;
     }
-    &:last-child {
-        margin-bottom: 0px;
+    
     }
 }
 
