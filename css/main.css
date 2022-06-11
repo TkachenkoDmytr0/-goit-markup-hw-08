@@ -816,7 +816,7 @@ img {
   z-index: 1;
 }
 
-.mobile-menu.is-hidden {
+.mobile-menu.is-open {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -1063,8 +1063,8 @@ img {
 ============================
  */
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/headerbg.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
   background-repeat: no-repeat;
   background-color: var(--hero-background-cl);
   background-size: cover;
@@ -1814,8 +1814,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .portfolio-projects__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: calc((100% - 6 * 15) / 2);
+    margin: 15px;
   }
   .portfolio-projects__item:nth-child(3n+3) {
     margin-right: 0px;

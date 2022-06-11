@@ -71,8 +71,8 @@
     }
 
     @include mq(desktop) {
-        margin-right: 30px;
-        margin-bottom: 30px;
+        width: calc((100% - 6 * 15) / 2);
+        margin: 15px;
 
         &:nth-child(3n+3) {
             margin-right: 0px;
