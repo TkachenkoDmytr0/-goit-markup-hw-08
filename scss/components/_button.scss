@@ -10,6 +10,9 @@
         fill: var(--bt-cl-secondary);
         
     }
+    @include mq(tablet){
+        display: none;
+    }
 }
 .mobiile-menu__close{
     position: absolute;

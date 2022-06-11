@@ -8,17 +8,14 @@
         background-repeat: no-repeat;
         background-color: var(--hero-background-cl);
         background-size: cover;
+        max-width: 1600px;
+        height: 600px;
+        padding: 200px 0px;
 
         @include mq(mobile-only) {
                 height: 400px;
                 padding: 118px 0px;
         }
-
-        max-width: 1600px;
-        height: 600px;
-        padding: 200px 0px;
-        margin-left: auto;
-        margin-right: auto;
 }
 
 .hero__title {
@@ -34,13 +31,17 @@
         text-transform: uppercase;
         color: var(--text-white-cl);
 
+        @include mq(tablet-only) {
+                margin-left: auto;
+                margin-right: auto;
+        }
+
         @include mq(desktop) {
                 font-size: 44px;
                 line-height: 1.36;
                 text-align: center;
-                
 
-                width: 696px;
+                max-width: 696px;
                 margin-bottom: 30px;
                 transition: cubic-bezier(.02, -0.3, 1, -0.01);
 

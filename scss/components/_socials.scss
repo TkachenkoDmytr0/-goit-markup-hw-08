@@ -37,6 +37,7 @@
  ===========================
  */
 
+
 .footer__social-text {
     @include mq(mobile-only){
         text-align: center;
@@ -53,11 +54,7 @@
     align-items: center;
     display: flex;
     margin-bottom: 60px;
-
-    @include mq (desktop){
-        display: flex;
-       
-    }
+    
 }
 
 .footer-social__item {

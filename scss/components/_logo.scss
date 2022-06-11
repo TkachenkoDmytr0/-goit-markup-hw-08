@@ -1,17 +1,22 @@
 // Header logo
 .header__logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    
+    @include mq(desktop){
+        font-size: 26px;
+        line-height: 1.19;
+    }
+    
+
     color: var(--logo-secondary-cl);
-@include mq(mobile-only){
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-    padding-top: 24px;
-    padding-bottom: 24px;
+
+
 }
 
 .header__logo-cl {
@@ -21,9 +26,10 @@
 // footer logo
 
 .footer__logo {
-    @include mq (mobile-only){
+    @include mq (mobile-only) {
         text-align: center;
     }
+
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
