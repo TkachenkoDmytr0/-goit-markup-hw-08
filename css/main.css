@@ -1120,6 +1120,7 @@ img {
   background-size: cover;
   max-width: 1600px;
   padding: 118px 0px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
