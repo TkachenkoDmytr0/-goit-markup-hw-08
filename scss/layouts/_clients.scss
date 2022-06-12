@@ -25,13 +25,13 @@
 .client__list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
+    justify-content: center;
 
     @include mq (mobile) {
         margin: -15px;
     }
 
-    @include mq (mobile) {
+    @include mq (tablet-only) {
         margin: -30px;
     }
 
