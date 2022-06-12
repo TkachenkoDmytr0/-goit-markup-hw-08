@@ -1113,18 +1113,19 @@ img {
 ============================
  */
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/header-img_background480.png);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/header-img_background480.png);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/header-img_background480.png), url(..images\backgroundheader\header-480-x2.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/header-img_background480.png), url(..images\backgroundheader\header-480-x2.png);
   background-repeat: no-repeat;
   background-color: var(--hero-background-cl);
   background-size: cover;
-  max-width: 1600px;
+  min-width: 4px;
   padding: 118px 0px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero {
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/header-img_background768.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/header-img_background768.png);
   }
@@ -1139,6 +1140,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/headerbg.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
   }
@@ -1216,6 +1218,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .peculiarities__list {
     display: block;
+    margin: 0 -15px;
   }
 }
 

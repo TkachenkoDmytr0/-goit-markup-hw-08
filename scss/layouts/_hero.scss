@@ -4,16 +4,17 @@
 ============================
  */
 .hero {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/header-img_background480.png);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/header-img_background480.png), url(..images\backgroundheader\header-480-x2.png);
         background-repeat: no-repeat;
         background-color: var(--hero-background-cl);
         background-size: cover;
-        max-width: 1600px;
+        min-width: 4px;
         padding: 118px 0px;
         margin: 0 auto;
 
 
         @include mq(tablet-only) {
+                max-width: 1600px;
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                         url(../images/backgroundheader/header-img_background768.png);
 
@@ -26,6 +27,7 @@
         }
 
         @include mq(desktop) {
+                max-width: 1600px;
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
 
                 @include re(retina) {
