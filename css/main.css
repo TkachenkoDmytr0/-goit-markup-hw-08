@@ -1063,20 +1063,26 @@ img {
 ============================
  */
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/headerbg.png);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/header-img_background480.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/header-img_background480.png);
   background-repeat: no-repeat;
   background-color: var(--hero-background-cl);
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
-  padding: 200px 0px;
+  padding: 118px 0px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero {
-    height: 400px;
-    padding: 118px 0px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/header-img_background768.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/header-img_background768.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/headerbg.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
   }
 }
 

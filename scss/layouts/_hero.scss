@@ -4,18 +4,34 @@
 ============================
  */
 .hero {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/header-img_background480.png);
         background-repeat: no-repeat;
         background-color: var(--hero-background-cl);
         background-size: cover;
         max-width: 1600px;
-        height: 600px;
-        padding: 200px 0px;
+        padding: 118px 0px;
 
-        @include mq(mobile-only) {
-                height: 400px;
-                padding: 118px 0px;
+
+        @include mq(tablet-only) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url(../images/backgroundheader/header-img_background768.png);
+
+                @include mq(retina) {
+                        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                                url(../images/backgroundheader/header-img@2x_768background768.png);
+                }
+
+
         }
+
+        @include mq(desktop) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
+
+                @include mq(retina) {
+                        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/Img@2_background1200.png);
+                }
+        }
+
 }
 
 .hero__title {
