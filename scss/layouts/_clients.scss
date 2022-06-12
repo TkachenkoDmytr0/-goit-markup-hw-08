@@ -25,12 +25,15 @@
 .client__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
 
     @include mq (mobile) {
         margin: -15px;
     }
 
+    @include mq (mobile) {
+        margin: -30px;
+    }
 
     @include mq (desktop) {
         display: flex;
@@ -45,7 +48,7 @@
     }
 
     @include mq (tablet-only) {
-        width: calc((100% - 3 * 15) / 3);
+        width: calc((100% - 6 * 15) / 3);
         margin: 15px;
     }
 
@@ -62,12 +65,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mq (tablet-only) {
+        width: 226px;
+    }
+
     width: 170px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid var(--social-cl);
     fill: var(--social-cl);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
