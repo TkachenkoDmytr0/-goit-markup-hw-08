@@ -92,8 +92,7 @@
  ===========================
  */
 .footer__modal {
-    margin-left: 90px;
-    width: 570px;
+    margin: 0 auto;
 
 
     @include mq(tablet) {
