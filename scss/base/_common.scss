@@ -7,12 +7,7 @@ body {
 }
 
 .section {
-    @media screen and (min-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    @media screen and (min-width: 768px) {
+    @include mq(mobile) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
