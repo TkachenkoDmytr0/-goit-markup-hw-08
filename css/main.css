@@ -941,6 +941,7 @@ img {
   .header__conteiner {
     position: relative;
     height: 60px;
+    min-width: 450px;
   }
 }
 
@@ -1118,14 +1119,13 @@ img {
   background-repeat: no-repeat;
   background-color: var(--hero-background-cl);
   background-size: cover;
-  min-width: 4px;
+  min-width: 450px;
   padding: 118px 0px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero {
-    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/header-img_background768.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/header-img_background768.png);
   }
@@ -1140,7 +1140,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/headerbg.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
   }
@@ -1151,6 +1150,10 @@ img {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/Img@2_background1200.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/Img@2_background1200.png);
   }
+}
+
+.header__conteiner {
+  min-width: 450px;
 }
 
 .hero__title {
@@ -1394,6 +1397,12 @@ img {
   background-color: var(--team-background-cl);
 }
 
+@media screen and (max-width: 767.98px) {
+  .team {
+    min-width: 450px;
+  }
+}
+
 .team__title {
   font-weight: 700;
   font-size: 36px;
@@ -1412,6 +1421,9 @@ img {
 @media screen and (max-width: 767.98px) {
   .team__list {
     display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1502,6 +1514,12 @@ img {
             Клиенты
  ===========================
 */
+@media screen and (max-width: 767.98px) {
+  .clients-conteiner {
+    min-width: 450px;
+  }
+}
+
 .client__title {
   font-weight: 700;
   font-size: 36px;
@@ -1599,6 +1617,12 @@ img {
 .footer {
   background-color: var(--hero-background-cl);
   padding: 60px 0px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer {
+    min-width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {

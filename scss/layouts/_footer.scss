@@ -6,6 +6,10 @@
 .footer {
     background-color: var(--hero-background-cl);
     padding: 60px 0px;
+
+    @include mq(mobile-only) {
+        min-width: 450px;
+    }
 }
 
 .footer__conteiner {

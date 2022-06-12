@@ -8,13 +8,13 @@
         background-repeat: no-repeat;
         background-color: var(--hero-background-cl);
         background-size: cover;
-        min-width: 4px;
+        min-width: 450px;
         padding: 118px 0px;
         margin: 0 auto;
 
 
+
         @include mq(tablet-only) {
-                max-width: 1600px;
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                         url(../images/backgroundheader/header-img_background768.png);
 
@@ -27,7 +27,6 @@
         }
 
         @include mq(desktop) {
-                max-width: 1600px;
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
 
                 @include re(retina) {
@@ -35,6 +34,10 @@
                 }
         }
 
+}
+
+.header__conteiner {
+        min-width: 450px;
 }
 
 .hero__title {

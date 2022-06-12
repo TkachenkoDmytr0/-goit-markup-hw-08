@@ -8,17 +8,18 @@
 }
 
 .header__conteiner {
-
     @include mq(mobile-only) {
         position: relative;
         height: 60px;
+        min-width: 450px;
     }
-   
+
 }
 
 .header__nav {
     display: flex;
     align-items: center;
+
     @include mq(tablet) {
         height: 80px;
     }
@@ -34,6 +35,7 @@
         display: flex;
         margin-left: 44px;
     }
+
     @include mq(desktop) {
         display: flex;
         margin-left: 93px;
@@ -45,10 +47,11 @@
         margin-left: 50px;
 
         &:first-child {
-            margin-left : 0;
+            margin-left: 0;
         }
     }
 }
+
 .header__list-contact {
     @include mq(mobile-only) {
         display: none;
@@ -57,11 +60,13 @@
     @include mq(tablet-only) {
         margin-left: auto;
     }
+
     @include mq(desktop) {
         display: flex;
         margin-left: auto;
     }
 }
+
 .header__item-contact {
     @include mq(tablet-only) {
         margin-left: auto;
@@ -71,6 +76,7 @@
             margin-bottom: 0;
         }
     }
+
     @include mq(desktop) {
         margin-left: auto;
         margin-right: 10px;
