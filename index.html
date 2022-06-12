@@ -205,15 +205,18 @@
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__list list">
                     <li class="work__images">
-                        <img src="./images/work/work-2.jpg" alt="диагностика" width="370" height="294">
+                        <img srcset="./images/work/@2-1_work370.jpg w370" sizes="(min-width: 1200px) 370px, 100vw"
+                            src="./images/work/work-1.jpg" alt="диагностика" width="370" height="294">
                         <p class="work__text">Десктопные приложения</p>
                     </li>
                     <li class="work__images">
-                        <img src="./images/work/work-1.jpg" alt="разработка" width="370" height="294">
+                        <img srcset="./images/work/@2-2_work370.jpg w370" src="./images/work/work-2.jpg"
+                            alt="разработка" width="370" height="294" sizes="(min-width: 1200px) 370px, 100vw">
                         <p class="work__text">Мобильные приложения</p>
                     </li>
                     <li class="work__images">
-                        <img src="./images/work/work-3.jpg" alt="проект" width="370" height="294">
+                        <img srcset="./images/work/@2-3_work370.jpg w370" sizes="(min-width: 1200px) 370px, 100vw"
+                            src="./images/work/work-3.jpg" alt="проект" width="370" height="294">
                         <p class="work__text">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -225,8 +228,14 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img class="team__images" src="./images/team/team.jpg" alt="Игорь Демьяненко" width="270"
-                            height="260">
+                        <img class="team__images" srcset="./images/team/team-1_270.jpg 270w,
+                        ./images/team/team2x-1_270.jpg 540w,
+                        ./images/team/team-1_354.jpg 354w,
+                        ./images/team/team2x-1_354.jpg 708w,
+                        ./images/team/team-1_450.jpg,
+                        ./images/team/team2x-1_450.jpg 900w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768) 354px, (max-width: 480) 450px 100vw"
+                            src="./images/team/team-1_450.jpg" alt="Игорь Демьяненко" width="450" height="460">
                         <div class="team__box">
                             <h3 class="team-box___name">Игорь Демьяненко</h3>
                             <p lang="en" class="team-box___text">Product Designer</p>
