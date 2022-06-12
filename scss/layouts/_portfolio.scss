@@ -3,11 +3,22 @@
         Портфолио
  ===========================
  */
+
+.potrtfolio__conteiner {
+    @include mq(mobile-only) {
+        min-width: 450px;
+    }
+}
+
 .portfolio__servise-list {
     display: flex;
 
-    @include mq(mobile) {
+    @include mq(mobile-only) {
         flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    @include mq(tablet-only) {
         margin-bottom: 40px;
     }
 
@@ -150,8 +161,4 @@
     line-height: 1.87;
     color: var(--paragraf-color);
 
-}
-
-.projects__text-heigth {
-    margin-bottom: 36px;
 }
