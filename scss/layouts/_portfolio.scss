@@ -96,7 +96,8 @@
 }
 
 .portfolio-projects__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
 
     &:hover,
     &:focus {
@@ -139,9 +140,9 @@
 
 .project__box {
     padding: 20px 24px;
-
     border: 1px solid var(--border-line);
     border-top: none;
+    flex-grow: 9;
 }
 
 .projects__title {
