@@ -2013,9 +2013,9 @@ img {
   padding: 20px 24px;
   border: 1px solid var(--border-line);
   border-top: none;
-  -webkit-box-flex: 9;
-      -ms-flex-positive: 9;
-          flex-grow: 9;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .projects__title {
