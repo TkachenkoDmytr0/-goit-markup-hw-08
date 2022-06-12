@@ -13,9 +13,14 @@
 }
 
 .footer__conteiner {
+    @include mq(tablet-only) {}
+}
+
+.footer__conteiner {
     @include mq (tablet-only) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         align-items: baseline;
 
     }
