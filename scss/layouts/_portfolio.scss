@@ -27,16 +27,10 @@
         margin-bottom: 50px;
     }
 
-
-
 }
 
 .portfolio__servise-item {
-
-
     @include mq(mobile-only) {
-
-
         &:nth-child(n+4) {
             margin-bottom: 0;
         }
@@ -76,9 +70,16 @@
     }
 
     @include mq(tablet-only) {
+        border: 1px solid var(--border-line);
+        border-top: none;
+        flex-grow: 1;
         width: 354px;
         width: calc((100% - 4 * 15) / 2);
         margin: 15px;
+
+        &:last-child {
+            flex-grow: 0;
+        }
     }
 
     @include mq(desktop) {
@@ -140,9 +141,16 @@
 
 .project__box {
     padding: 20px 24px;
-    border: 1px solid var(--border-line);
-    border-top: none;
-    flex-grow: 1;
+
+    @include mq(mobile-only) {
+        border: 1px solid var(--border-line);
+        border-top: none;
+    }
+
+    @include mq(desktop) {
+        border: 1px solid var(--border-line);
+        border-top: none;
+    }
 }
 
 .projects__title {
