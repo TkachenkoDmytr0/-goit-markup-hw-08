@@ -1692,8 +1692,8 @@ img {
  ===========================
  */
 .footer__modal {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 90px;
+  width: 570px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1768,6 +1768,12 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-backdrop__input {
+    width: 358px;
+  }
 }
 
 .footer-backdrop__input:hover, .footer-backdrop__input:focus {

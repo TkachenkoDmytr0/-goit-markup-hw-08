@@ -9,44 +9,48 @@
 }
 
 .footer__conteiner {
-    @include mq (tablet-only){
+    @include mq (tablet-only) {
         display: flex;
         flex-wrap: wrap;
-        align-items:baseline ;
-        
+        align-items: baseline;
+
     }
-    @include mq (desktop){
+
+    @include mq (desktop) {
         display: flex;
         align-items: baseline;
     }
-    
+
 }
 
 .footer__address {
-    @include mq(mobile-only){
+    @include mq(mobile-only) {
         margin-bottom: 60px;
-        
+
     }
-    @include mq(desktop){
+
+    @include mq(desktop) {
         margin-right: 70px;
     }
-    
-    
+
+
 }
 
 .footer-adress__item {
-    @include mq(mobile-only){
+    @include mq(mobile-only) {
         margin-right: 0;
         text-align: center;
     }
+
     margin-bottom: 8px;
+
     &:last-child {
         margin-bottom: 0px;
-   
-    @include mq(desktop){
-        width: 231px;
-    }
-    
+
+        @include mq(desktop) {
+            width: 231px;
+        }
+
     }
 }
 
@@ -76,10 +80,11 @@
     }
 }
 
-.footer__social{
-    @include mq(tablet-only){
-       margin-left: 165px;
-   }}
+.footer__social {
+    @include mq(tablet-only) {
+        margin-left: 165px;
+    }
+}
 
 /*
 ============================
@@ -87,37 +92,42 @@
  ===========================
  */
 .footer__modal {
-    margin-left: auto;
-    margin-right: auto;
-    @include mq(tablet){
+    margin-left: 90px;
+    width: 570px;
+
+
+    @include mq(tablet) {
         margin-top: 60px;
         width: 450px;
     }
-    @include mq(desktop){
+
+    @include mq(desktop) {
         display: flex;
         margin-left: 93px;
     }
-    
+
 }
 
 .footer-backdrop__label {
-    @include mq(desktop){
+    @include mq(desktop) {
         display: flex;
         flex-direction: column;
         margin-right: 12px;
     }
-  
+
 }
 
 .footer-backdrop__label-text {
-    @include mq(mobile-only){
+    @include mq(mobile-only) {
         display: flex;
         justify-content: center;
     }
-    @include mq(tablet-only){
+
+    @include mq(tablet-only) {
         display: flex;
         justify-content: center;
     }
+
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -131,6 +141,11 @@
     margin-top: 20px;
     padding: 15px 16px 15px 16px;
     width: 100%;
+
+    @include mq(desktop) {
+        width: 358px;
+    }
+
     color: var(--background-cl-body);
     background-color: var(--hero-background-cl);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -157,12 +172,14 @@
     position: absolute;
     bottom: 12px;
     right: 140px;
-    @include mq(tablet){
+
+    @include mq(tablet) {
         right: 155px;
     }
-    @include mq(desktop){
+
+    @include mq(desktop) {
         right: 28px;
     }
-    
+
     fill: var(--background-cl-body);
 }
