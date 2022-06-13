@@ -1270,6 +1270,7 @@ header .header__nav {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .peculiarities__item {
+    width: 354px;
     width: calc((100% - 4 * 15) / 2);
     margin: 15px;
   }
@@ -1309,6 +1310,7 @@ header .header__nav {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .peculiarities__icons {
+    width: 354px;
     padding: 25px 142px;
   }
 }
