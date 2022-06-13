@@ -88,7 +88,7 @@ img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 320px;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -952,6 +952,7 @@ img {
 
 .header__conteiner {
   position: relative;
+  width: 100%;
 }
 
 .header__nav {
@@ -1269,7 +1270,6 @@ header .header__nav {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .peculiarities__item {
-    width: 354px;
     width: calc((100% - 4 * 15) / 2);
     margin: 15px;
   }
@@ -1621,8 +1621,19 @@ header .header__nav {
   padding: 60px 0px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+.footer__conteiner {
+  width: 320px;
+}
+
+@media screen and (min-width: 480px) {
   .footer__conteiner {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__conteiner {
+    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1639,6 +1650,7 @@ header .header__nav {
 
 @media screen and (min-width: 1200px) {
   .footer__conteiner {
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1648,7 +1660,7 @@ header .header__nav {
   }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__box {
     text-align: center;
   }
@@ -1758,32 +1770,16 @@ header .header__nav {
 }
 
 .footer-backdrop__label-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--background-cl-body);
-}
-
-@media screen and (min-width: 480px) {
-  .footer-backdrop__label-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .footer-backdrop__label-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 .footer-backdrop__input {

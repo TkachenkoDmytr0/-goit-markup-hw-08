@@ -9,23 +9,31 @@
 }
 
 .footer__conteiner {
-    @include mq (tablet-only) {
+    width: 320px;
+
+    @include mq (mobile) {
+        width: 480px;
+    }
+
+    @include mq (tablet) {
+        width: 768px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: baseline;
-
     }
 
     @include mq (desktop) {
+        width: 1200px;
         display: flex;
         align-items: baseline;
     }
 
 }
 
+
 .footer__box {
-    @include mq(mobile-only) {
+    @include mq(tablet-only) {
         text-align: center;
     }
 
@@ -125,16 +133,8 @@
 }
 
 .footer-backdrop__label-text {
-    @include mq(mobile) {
-        display: flex;
-        justify-content: center;
-    }
-
-    @include mq(tablet-only) {
-        display: flex;
-        justify-content: center;
-    }
-
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
