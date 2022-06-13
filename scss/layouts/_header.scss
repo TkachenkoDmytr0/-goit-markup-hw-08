@@ -5,6 +5,7 @@
  */
 .header {
     border-bottom: 1px solid var(--header-line);
+
 }
 
 .header__conteiner {
@@ -20,6 +21,11 @@
     }
 }
 
+header .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .header__list {
     @include mq(mobile-only) {
