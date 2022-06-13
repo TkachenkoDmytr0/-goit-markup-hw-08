@@ -64,9 +64,7 @@
         margin-bottom: 30px;
 
         @include mq(mobile) {
-
                 padding: 25px 190px;
-
         }
 
         @include mq(tablet-only) {
