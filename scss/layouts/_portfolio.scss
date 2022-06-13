@@ -27,21 +27,17 @@
 }
 
 .portfolio__servise-item {
-    @include mq(mobile-only) {
-        &:nth-child(n+4) {
-            margin-bottom: 0;
-        }
-
-        &:nth-child(3) {
-            margin-right: 0;
-        }
-    }
-
     margin-right: 8px;
     margin-bottom: 8px;
 
     &:last-child {
         margin-right: 0px;
+    }
+
+    @include mq(mobile-only) {
+        &:nth-child(n+4) {
+            margin-bottom: 0;
+        }
     }
 }
 

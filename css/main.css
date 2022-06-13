@@ -492,12 +492,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767.98px) {
-  .team-social__link {
-    margin-bottom: 60px;
-  }
-}
-
 .team-social__link:hover, .team-social__link:focus {
   background: var(--bt-nav-cl);
 }
@@ -1898,17 +1892,14 @@ img {
   margin-bottom: 8px;
 }
 
+.portfolio__servise-item:last-child {
+  margin-right: 0px;
+}
+
 @media screen and (max-width: 767.98px) {
   .portfolio__servise-item:nth-child(n+4) {
     margin-bottom: 0;
   }
-  .portfolio__servise-item:nth-child(3) {
-    margin-right: 0;
-  }
-}
-
-.portfolio__servise-item:last-child {
-  margin-right: 0px;
 }
 
 /*
