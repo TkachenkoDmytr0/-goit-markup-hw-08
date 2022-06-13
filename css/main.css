@@ -94,19 +94,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 450px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 738px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -1873,6 +1873,9 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .portfolio__servise-list {
     margin-bottom: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1932,19 +1935,9 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .portfolio-projects__item {
-    border: 1px solid var(--border-line);
-    border-top: none;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     width: 354px;
     width: calc((100% - 4 * 15) / 2);
     margin: 15px;
-  }
-  .portfolio-projects__item:last-child {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
   }
 }
 
@@ -1979,6 +1972,24 @@ img {
 .portfolio__overley {
   position: relative;
   overflow: hidden;
+}
+
+.project__box {
+  padding: 20px 24px;
+  border: 1px solid var(--border-line);
+  border-top: none;
+}
+
+.portfolio-projects__item.project__box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.portfolio-projects__link.project__box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .portfolio-projects__overley {
@@ -2017,24 +2028,6 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project__box {
-  padding: 20px 24px;
-}
-
-@media screen and (max-width: 767.98px) {
-  .project__box {
-    border: 1px solid var(--border-line);
-    border-top: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .project__box {
-    border: 1px solid var(--border-line);
-    border-top: none;
-  }
 }
 
 .projects__title {
