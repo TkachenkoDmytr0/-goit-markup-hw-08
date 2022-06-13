@@ -8,13 +8,11 @@
 }
 
 .header__conteiner {
-    @include mq(mobile-only) {
         position: relative;
         height: 60px;
-        min-width: 450px;
-    }
 
-}
+
+    }
 
 .header__nav {
     display: flex;

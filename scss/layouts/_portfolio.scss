@@ -4,11 +4,7 @@
  ===========================
  */
 
-.potrtfolio__conteiner {
-    @include mq(mobile-only) {
-        min-width: 450px;
-    }
-}
+
 
 .portfolio__servise-list {
     display: flex;

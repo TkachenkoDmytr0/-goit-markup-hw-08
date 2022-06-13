@@ -6,14 +6,8 @@
 .footer {
     background-color: var(--hero-background-cl);
     padding: 60px 0px;
+    min-width: 320px;
 
-    @include mq(mobile-only) {
-        min-width: 450px;
-    }
-}
-
-.footer__conteiner {
-    @include mq(tablet-only) {}
 }
 
 .footer__conteiner {
@@ -32,11 +26,18 @@
 
 }
 
+.footer__box {
+    text-align: center;
+
+}
+
 .footer__address {
-    @include mq(mobile-only) {
+    @include mq(mobile) {
         margin-bottom: 60px;
 
     }
+
+
 
     @include mq(desktop) {
         margin-right: 70px;
@@ -46,7 +47,7 @@
 }
 
 .footer-adress__item {
-    @include mq(mobile-only) {
+    @include mq(mobile) {
         margin-right: 0;
         text-align: center;
     }
@@ -126,7 +127,7 @@
 }
 
 .footer-backdrop__label-text {
-    @include mq(mobile-only) {
+    @include mq(mobile) {
         display: flex;
         justify-content: center;
     }
@@ -178,8 +179,12 @@
 
 .footer__modal-icon {
     position: absolute;
+    right: 75px;
     bottom: 12px;
-    right: 140px;
+
+    @include mq(mobile) {
+        right: 140px;
+    }
 
     @include mq(tablet) {
         right: 155px;

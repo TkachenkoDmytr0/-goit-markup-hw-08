@@ -4,11 +4,8 @@
  =========================== */
 .team {
     background-color: var(--team-background-cl);
-
-    @include mq(mobile-only) {
-        min-width: 450px;
-    }
 }
+
 
 .team__title {
     font-weight: 700;
@@ -42,10 +39,9 @@
     @include mq (mobile-only) {
         margin-bottom: 30px;
 
-
-        &:last -child {
-      margin-bottom: 0px;
-  }
+        &:last-child {
+            margin-bottom: 0px;
+        }
     }
 
     @include mq (tablet-only) {

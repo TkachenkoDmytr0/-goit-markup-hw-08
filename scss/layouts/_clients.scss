@@ -4,10 +4,10 @@
  ===========================
 */
 .clients-conteiner {
-    @include mq(mobile-only) {
-        min-width: 450px;
-    }
+
+    min-width: 320px;
 }
+
 
 .client__title {
     font-weight: 700;
