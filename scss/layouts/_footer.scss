@@ -6,8 +6,6 @@
 .footer {
     background-color: var(--hero-background-cl);
     padding: 60px 0px;
-    min-width: 320px;
-
 }
 
 .footer__conteiner {
@@ -27,7 +25,9 @@
 }
 
 .footer__box {
-    text-align: center;
+    @include mq(mobile-only) {
+        text-align: center;
+    }
 
 }
 
@@ -37,8 +37,6 @@
 
     }
 
-
-
     @include mq(desktop) {
         margin-right: 70px;
     }
@@ -47,7 +45,7 @@
 }
 
 .footer-adress__item {
-    @include mq(mobile) {
+    @include mq(mobile-only) {
         margin-right: 0;
         text-align: center;
     }

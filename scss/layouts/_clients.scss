@@ -26,14 +26,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    @include mq (mobile) {
-        margin: -15px;
-    }
-
-    @include mq (tablet-only) {
-        margin: -30px;
-    }
+    margin: -15px;
 
     @include mq (desktop) {
         display: flex;
@@ -53,11 +46,8 @@
     }
 
     @include mq (desktop) {
-        margin-right: 30px;
-
-        &:last-child {
-            margin-right: 0;
-        }
+        width: calc((100% - 12 * 15) / 6);
+        margin: 15px;
     }
 }
 
