@@ -15,7 +15,7 @@
         width: 480px;
     }
 
-    @include mq (tablet) {
+    @include mq (tablet-only) {
         width: 768px;
         display: flex;
         flex-wrap: wrap;
@@ -33,28 +33,20 @@
 
 .footer__box {
     @include mq(tablet-only) {
+        margin-bottom: 60px;
         text-align: center;
     }
-
 }
 
 .footer__address {
-    @include mq(mobile) {
-        margin-bottom: 60px;
-
-    }
-
     @include mq(desktop) {
         margin-right: 70px;
     }
-
-
 }
 
 .footer-adress__item {
     @include mq(mobile-only) {
         margin-right: 0;
-        text-align: center;
     }
 
     margin-bottom: 8px;
@@ -107,11 +99,9 @@
  ===========================
  */
 .footer__modal {
-    margin: 0 auto;
 
 
     @include mq(tablet) {
-        margin-top: 60px;
         width: 450px;
     }
 

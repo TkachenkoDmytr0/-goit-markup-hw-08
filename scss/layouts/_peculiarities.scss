@@ -3,6 +3,7 @@
         особености
 ============================
  */
+
 .peculiarities__name {
         @include mq(mobile-only) {
                 text-align: center;

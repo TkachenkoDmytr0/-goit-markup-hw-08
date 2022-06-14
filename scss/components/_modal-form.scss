@@ -9,6 +9,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    margin: -5px;
 
     @include mq(mobile-only) {
         min-width: 460px;
@@ -31,12 +32,16 @@
 .backdrop__modal-wrapper {
     position: absolute;
 
-    padding: 40px;
-    width: 320px;
+    padding: 30px;
+    width: 310px;
     height: 640px;
+    width: calc((100% - 2 * 10) / 1);
+    margin: 10px;
+
 
 
     @include mq(mobile) {
+        padding: 40px;
         width: 450px;
         height: 609px;
         top: 50%;
@@ -128,17 +133,21 @@
 }
 
 .backdrop-form__input-warning {
-    position: absolute;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
+    display: none;
 
-    color: var(--bt-cl);
-    bottom: -17px;
-    right: 5px;
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include mq(mobile) {
+        position: absolute;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+
+        color: var(--bt-cl);
+        bottom: -17px;
+        right: 5px;
+        opacity: 0;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .backdrop-form__input:focus~.backdrop-form__input-warning {
@@ -188,7 +197,13 @@
 .backdrop-form__checkbox-text {
     color: var(--paragraf-color);
     font-weight: 400;
-    line-height: 1.71;
+    line-height: 1.31;
+
+    @include mq(mobile) {
+        font-size: 100;
+        line-height: 1.31;
+        letter-spacing: 0.01em;
+    }
 }
 
 .form-checkbox-link {
