@@ -1218,12 +1218,19 @@ header .header__nav {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-white-cl);
+  -webkit-transition: cubic-bezier(0.02, -0.3, 1, -0.01);
+  transition: cubic-bezier(0.02, -0.3, 1, -0.01);
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero__title {
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 360px;
   }
 }
 
@@ -1232,16 +1239,8 @@ header .header__nav {
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    max-width: 696px;
+    width: 696px;
     margin-bottom: 30px;
-    -webkit-transition: cubic-bezier(0.02, -0.3, 1, -0.01);
-    transition: cubic-bezier(0.02, -0.3, 1, -0.01);
-    -webkit-animation-name: example;
-            animation-name: example;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
 }
 
@@ -1691,7 +1690,7 @@ header .header__nav {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
   .footer__box {
     margin-bottom: 60px;
     text-align: center;
@@ -1794,13 +1793,18 @@ header .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--background-cl-body);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer-backdrop__label-text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-backdrop__input {
