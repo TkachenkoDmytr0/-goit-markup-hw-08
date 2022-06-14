@@ -1973,6 +1973,7 @@ header .header__nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .portfolio-projects__link:hover, .portfolio-projects__link:focus {
@@ -1989,18 +1990,9 @@ header .header__nav {
   padding: 20px 24px;
   border: 1px solid var(--border-line);
   border-top: none;
-}
-
-.portfolio-projects__item.project__box {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.portfolio-projects__link.project__box {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .portfolio-projects__overley {

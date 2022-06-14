@@ -86,6 +86,7 @@
 .portfolio-projects__link {
     display: flex;
     flex-direction: column;
+    height: 100%;
 
     &:hover,
     &:focus {
@@ -102,15 +103,9 @@
     padding: 20px 24px;
     border: 1px solid var(--border-line);
     border-top: none;
+    flex: 1;
 }
 
-.portfolio-projects__item.project__box {
-    flex-grow: 1;
-}
-
-.portfolio-projects__link.project__box {
-    flex-grow: 1;
-}
 
 .portfolio-projects__overley {
     position: absolute;
