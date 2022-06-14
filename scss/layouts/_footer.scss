@@ -106,6 +106,7 @@
     }
 
     @include mq(desktop) {
+        width: 1200px;
         display: flex;
         margin-left: 93px;
     }

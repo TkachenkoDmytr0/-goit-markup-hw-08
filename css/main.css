@@ -1770,6 +1770,7 @@ header .header__nav {
 
 @media screen and (min-width: 1200px) {
   .footer__modal {
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
