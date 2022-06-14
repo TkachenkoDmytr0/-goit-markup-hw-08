@@ -64,3 +64,26 @@
         transform: translatex(-50%);
     }
 }
+
+@keyframes size {
+    10% {
+        font-size: 7px;
+        ;
+    }
+
+    30% {
+        font-size: 8px;
+    }
+
+    50% {
+        font-size: 9px;
+    }
+
+    70% {
+        font-size: 10px;
+    }
+
+    100% {
+        font-size: 11px;
+    }
+}
