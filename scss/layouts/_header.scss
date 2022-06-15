@@ -11,15 +11,15 @@
 .header__conteiner {
     position: relative;
     width: 100%;
+
+    @include mq(desktop) {
+        width: 1200px;
+    }
 }
 
 .header__nav {
     display: flex;
     align-items: center;
-
-    @include mq(tablet) {
-        height: 80px;
-    }
 }
 
 header .header__nav {

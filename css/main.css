@@ -93,7 +93,7 @@ img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
+  max-width: 1600px;
 }
 
 @media screen and (min-width: 480px) {
@@ -269,10 +269,16 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   padding-top: 16px;
   padding-bottom: 16px;
   color: var(--logo-secondary-cl);
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -805,15 +811,6 @@ img {
   line-height: 1.16;
 }
 
-.backdrop-form__checkbox-text:hover {
-  -webkit-animation-name: size;
-          animation-name: size;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
 @media screen and (min-width: 480px) {
   .backdrop-form__checkbox-text {
     font-size: 12px;
@@ -1039,6 +1036,12 @@ img {
   width: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__conteiner {
+    width: 1200px;
+  }
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,12 +1049,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .header__nav {
-    height: 80px;
-  }
 }
 
 header .header__nav {
@@ -1248,6 +1245,8 @@ header .header__nav {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    min-width: 1200px;
+    height: 600px;
     padding: 200px 0px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgroundheader/headerbg.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundheader/headerbg.png);
@@ -1263,7 +1262,6 @@ header .header__nav {
 
 .hero__title {
   position: relative;
-  max-width: 480px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
@@ -1417,13 +1415,13 @@ header .header__nav {
         публикация работ
 ============================
  */
-@media screen and (max-width: 767.98px) {
-  .work__conteiner {
-    display: none;
+@media screen and (max-width: 1199.98px) {
+  .work {
+    padding: 0;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
   .work__conteiner {
     display: none;
   }

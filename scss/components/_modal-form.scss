@@ -201,12 +201,6 @@
     font-size: 7px;
     line-height: 1.16;
 
-    &:hover {
-        animation-name: size;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-
     @include mq(mobile) {
         font-size: 12px;
         line-height: 1.16;
